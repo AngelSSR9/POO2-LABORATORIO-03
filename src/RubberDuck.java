@@ -1,16 +1,11 @@
 
-public class RubberDuck extends Duck{
-    public String quack(){
-        return "Squeak";
-    }
+public class RubberDuck extends Duck {
+
 
     @Override
-    String Display() {
-        return "Soy un pato Rubber";
+     void display() {
+        System.out.println("Soy un pato rubber.");
     }
-    
-    public void fly(){
-    }
-    
-    
+
+
 }

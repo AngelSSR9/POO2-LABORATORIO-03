@@ -1,8 +1,9 @@
 public class RedHeadDuck extends Duck
 {
  
-   public String Display()
+   public void display()
    {
-       return "Soy un pato RedHead ";
+       System.out.println("Soy un pato red head");
    }
+
 }

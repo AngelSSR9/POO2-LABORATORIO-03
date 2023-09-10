@@ -1,22 +1,23 @@
- abstract class Duck
-{
-       
-        abstract String Display();
+ abstract class Duck {
 
-        public String Quack()
-        {
-          return  "Graznar";
-        }
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
 
-        public String Swim()
+    public Duck(){
+    }
+
+    public void performFly(){
+        flyBehavior.fly();
+    }
+
+    public void performQuack(){
+        quackBehavior.quack();
+    }
+    abstract void display();
+
+    public String swim()
         {
-            return "Estoy nadando";
+            return "Todos los patos nadan, menos los decoy  ";
         }
-        
-        public String Duck()
-        {
-            return "Estoy volando";
-        }
-        
         
 }

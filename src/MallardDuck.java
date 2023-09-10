@@ -1,9 +1,13 @@
-public class MallardDuck extends Duck
-{
-    public String Display ()
-    {
-        return "Soy un pato Mallard ";
+public class MallardDuck extends Duck {
+
+    public MallardDuck(){
+        quackBehavior = new Quack();
+        flyBehavior = new FlyWithWings();
     }
-    
-    
+
+    public void display ()
+    {
+        System.out.println("Soy un pato mallard");;
+    }
+
 }
